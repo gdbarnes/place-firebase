@@ -6,10 +6,7 @@ import '@firebase/firestore';
 var config = {
   apiKey: process.env.REACT_APP_FIREBASE_API_KEY,
   authDomain: 'pixels-711cc.firebaseapp.com',
-  databaseURL: 'https://pixels-711cc.firebaseio.com',
-  projectId: 'pixels-711cc',
-  storageBucket: 'pixels-711cc.appspot.com',
-  messagingSenderId: '121028397546'
+  projectId: 'pixels-711cc'
 };
 firebase.initializeApp(config);
 
@@ -35,13 +32,6 @@ class App extends Component {
       });
     this.setState({
       selectedCoords: null
-      // pixels: [
-      //   ...this.state.pixels,
-      //   {
-      //     ...this.state.selectedCoords,
-      //     color: color.hex
-      //   }
-      // ]
     });
   };
 
